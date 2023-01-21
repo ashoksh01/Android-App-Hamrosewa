@@ -1,0 +1,278 @@
+.content {
+    background-color: var(--theme-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}
+
+
+
+.fa-heart {
+    color: var(--clr-white);
+}
+
+
+.d-none {
+    display: none !important;
+
+}
+
+.toggle-btn.active {
+    border-bottom: 1px solid white;
+    word-wrap: none !important;
+
+}
+
+.toggle-btn {
+    cursor: pointer;
+    width: 200px;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: var(--clr-white);
+    white-space: nowrap;
+    
+
+
+}
+
+.toggle-btn:hover {
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+.cover-page {
+    height: 15vw;
+    position: relative;
+    z-index: -1;
+
+
+}
+
+
+
+/* ============profile-info section===================== */
+.row-cols-2 {
+    display: flex;
+    flex-direction: column;
+    padding-inline: calc(50px + 1vw);
+    gap: 2%;
+    position: relative;
+
+    height: 100%;
+  
+
+}
+
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    height: 55vh;
+    margin-top: 10px;
+    border: 1px solid rgb(217, 217, 217) ;
+    border-radius: 10px;
+    /* box-shadow: -4px 6px 14px -5px rgba(26, 23, 23, 0.74);
+        -webkit-box-shadow: -4px 6px 14px -5px rgba(26, 23, 23, 0.74);
+        -moz-box-shadow: -4px 6px 14px -5px rgba(26, 23, 23, 0.74); */
+
+}
+
+.name {
+    color: rgb(104, 101, 101);
+    margin-bottom: 20px;
+    
+}
+
+.location {
+    color: rgb(104, 101, 101);
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.profile-bio {
+    text-align: justify;
+    color: var(--paragraph-clr);
+}
+
+.rounded-img {
+    width: 150px;
+    border: 10px solid rgb(198, 200, 207);
+    height: 150px;
+    border-radius: 100px;
+    margin: 20px auto;
+}
+
+.follow-btn {
+    padding: 7px 7px;
+    margin: 10px auto;
+    background-color: rgb(16, 26, 44);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 50px;
+    width: min(150px, calc(120px + 2vw));
+
+
+}
+
+.social-icons {
+    margin-block: 10px;
+}
+
+.fab {
+    background-color: rgba(255, 255, 255, 0.39);
+    font-size: 20px;
+    padding: 8px 8px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+
+/* =========================================================== */
+
+/* =======================tab-section========================== */
+.tab-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /* border: 2px solid red; */
+}
+
+
+.tab-nav {
+    display: flex;
+    word-break: keep-all;
+
+
+}
+
+.liked {
+    color: pink !important;
+}
+
+.card-img {
+    aspect-ratio: 1/1;
+
+}
+
+.card {
+    padding: 2px 2px;
+    background: rgb(172, 170, 170);
+
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card-head {
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-head:hover {
+    opacity: 100;
+    background-color: rgba(7, 8, 24, 0.6);
+}
+
+.bid-btn {
+    position: absolute;
+    bottom: -50px;
+    transition: All 2s ease-in-out;
+    background-color: rgb(93, 93, 187);
+    right: 25%;
+    width: 50%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 10px;
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.card-head:hover .bid-btn {
+    bottom: 10px;
+}
+
+.status {
+    color: rgb(102, 102, 102);
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-end: 5px;
+    padding-block: 4px 4px;
+}
+
+/* .row-cols-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3vw;
+    padding: 10px 10px;
+    row-gap: 3vw;
+    border: 2px solid yellow;
+
+} */
+
+
+
+
+.card-img-section {
+    position: relative;
+}
+
+.card-head {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 4px 4px;
+}
+
+/* =================================================================== */
+
+@media screen and (min-width: 992px) {
+
+    .row-cols-2 {
+        display: flex;
+        flex-direction: row;
+        padding-inline: calc(100px + 1vw);
+        gap: 2%;
+    }
+
+    .profile-info {
+        width: 30%;
+
+        position: relative;
+        top: -120px;
+        background-color: white;
+    }
+
+    .tab-section {
+        width: 90%;
+        
+    }
+
+
+
+    .row-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
